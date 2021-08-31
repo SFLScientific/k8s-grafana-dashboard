@@ -1,0 +1,7 @@
+repos:
+- repo: local
+  hooks:
+  - id: gitleaks # Check secret key / token leakage
+    name: Gitleaks
+    language: docker_image
+    entry: zricethezav/gitleaks:v7.4.0 -v
